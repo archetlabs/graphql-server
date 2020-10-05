@@ -1,0 +1,31 @@
+{
+  "name": "@archet/server",
+  "version": "0.0.1",
+  "description": "",
+  "module": "esm/index.js",
+  "main": "cjs/index.js",
+  "scripts": {
+    "build": "babel esm --out-dir cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "apollo-server": "2.9.12",
+    "graphql-tools": "4.0.6",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.4",
+    "@babel/core": "7.7.4",
+    "@babel/preset-env": "7.7.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archetlabs/server.git"
+  },
+  "author": "Archet",
+  "license": "LGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/archetlabs/server/issues"
+  },
+  "homepage": "https://github.com/archetlabs/server#readme"
+}
